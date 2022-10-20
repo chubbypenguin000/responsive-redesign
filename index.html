@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1 class="text_shadows">responsive redesign</h1>
+        <!-- overview stuff -->
+        <div>
+            <h2>overview</h2>
+            <p>The goal for this assignment is to recreate a simple website by analyzing the pros and cons of its existing interface 
+                and improving it based on usability, learnability, and memorability factors. The website will support carious screen sizes, 
+                being responsive based on the low-fidelity and high-fidelity models.</p>
+        </div>
+
+        <!-- part 1 -->
+        <div>
+            <h2> part 1: identifying usability problems </h2>
+            <h3> picking a webpage </h3>
+            <div class="row">
+                <div class="column-text">
+                  <p class="header2">The webpage I selected is for the <a href="https://www.demanddriveninstitute.com/home">
+                    Demand Driven Institute</a>. After scouring random websites, I came across a website for an organization that aims to teach about changing businesses
+                    globally. However, the user interface is quite striking to me (open the link or refer to the screenshot attached to see for yourself!). It is also not
+                    the most adaptable if the window is resized (note the nav bar when you shrink it!).</p>
+                </div>
+                <div class="column-img">
+                    <a href="https://www.demanddriveninstitute.com/home">
+                        <img id="ddi-img" src="ddi.png"/>
+                    </a>
+                </div>
+            </div>
+
+            <h3> finding problems </h3>
+              <p> Upon analyzing the website, there are some points to be made with respect to efficiency, learnability, and memorability.</p>
+              <h4> efficiency </h4>
+              <ul>
+                <li>visibility of system status: from my intuition and experience from websites, clicking on the logo or company icon (typically on the top left corner of the window) brings you back to the home page. however, despite having a large organization logo, it is non-interactive and non-responsive. the slogan, however, brings you back to the homepage.</li>
+                <li>consistency and standards: there are 2 log-in places (right next to each other) above the navigation bar that leads you to the same page. furthermore, the second login text is “LOGIN/SIGN …”; from my point of view of conventionality, it should be “LOGIN/SIGN UP”</li>
+              </ul>
+
+              <h4> learnability </h4>
+              <ul>
+                <li>aesthetic and minimalistic design: the most prominent feature to me is the color palette of this webpage. It is intended to be informative about Demand Driven strategies of industries, but the even looking at the web-page is disturbing to the eyes. furthermore, the amount of information on this webpage can be condensed or synthesized. Had I not read the about page (which is not written on the home page), I wouldn’t have known what the Demand Driven Institute does. Thus, having informative information (as well as clarifying what is already on the webpage) would increase the UIUX of this webpage.</li>
+              </ul>
+
+              <h4> memorability </h4>
+              <ul>
+                <li>match between system and the real world: i have two main qualms with the organization of the navigation bar. first, the sheer number of drop-down options is overwhelming. there are two identical nav bars on top and bottom, and another to the right of the window. with this lack of conciseness, the website’s abundance of options may create confusion as to where to look if one wants to go to a particular page</li>
+                <li>the nav-bar options don’t seem to have a coherent organization to how it is presented. from my experience, the more important/relevant/popular options are presented throughout the nav bar, and miscellaneous static pages (such as the About or Contact page) are presented towards the ends of the nav bar. some sort of organization to how these are presented would be very helpful</li>
+              </ul>
+
+            <h3> accessibility </h3>
+              <p>After undergoing WebAIM WAVE, the website only had 1 general error, 22 contrast errors, and 36 alerts.</p>
+              <ul>
+                <li>I found that the general error is that the button to scroll back up to the top of the page contains an empty link. This appears as a strange error to me, because the button shouldn’t have a link (to my understanding of its implementation). This leads me to wonder how the functionality was implemented, and if the developers leveraged the link functionality to create the button</li>
+                <li>the contrast errors are from the color on the page, and the bulk of it is between the white text and the blue background, which would be difficult for those with low vision to view</li>
+                <li>the alerts all deal with images with suspicious alternative text, which indicate either an insufficient or lack of alternative text. The inclusion of such is important for accomodating those with disabilities.</li>
+              </ul>
+        </div>
+
+        <!-- part 2 -->
+        <div>
+            <h2> part 2: visual redesign </h2>
+            <h3> low-fidelity wireframing </h3>
+                <p> There are three wireframes for my resdesign: one for mobile, tablet, and desktop. The desktop view is annotated with solutions to the problems previously stated. As the other views would resemble the desktop, the annotations can be drawn from the desktop comments.</p>
+
+          
+                <div class="column-img">
+                  <img style="width: 900px;" id="ddi-img" src="lofi-desktop.png"/>
+                </div>
+                <div class="row">
+                  <div class="column-img">
+                    <img style="width: 350px;" id="ddi-img" src="lofi-tablet.png"/>
+                  </div>
+                  <div class="column-img">
+                    <img style="width: 350px;" id="ddi-img" src="lofi-phone.png"/>
+                  </div>
+                </div>
+
+            <h3> visual design guide </h3>
+              <p>To better assist developers in the handoff process to create the webapp, the following is a visual design style guide that displays the main colors,
+                typography, and reusable components' different states.
+              </p>
+              <div class="column-img"> <img id="ddi-img" src="icons.png"/> </div>
+              
+            <h3> high-fidelity prototyping </h3>
+              <p> Using Figma, I created a total of 3 high-fdelity prototypes (one for each screen; refer to the lofi prototypes). Each is annotated with
+                different element layout choices such that a developer can reproduce them without additional explanation.
+              </p>
+
+              <div class="column-img">
+                <img style="width: 900px;" id="ddi-img" src="hifi-laptop.png"/>
+              </div>
+              <div class="row">
+                <div class="column-img">
+                  <img style="width: 430px;" id="ddi-img" src="hifi-tablet.png"/>
+                </div>
+                <div class="column-img">
+                  <img style="width: 430px;" id="ddi-img" src="hifi-phone.png"/>
+                </div>
+              </div>
+        </div>
+
+         <!-- part 3 -->
+         <div>
+            <h2> responsive redesign </h2>
+              <p> So, what improvements were made in the redesign? The most noticeable change is the color palette; rather than the (uncomfortably) striking red, green, and 
+                yellow theme, the new website is a simple black and white with colors from the image and testimonials. There is also more consistency across the webapp, as there 
+                is only one login location-- the user icon on the top right. Clicking on the logo on the top left would also lead you back to the home page. The nav bar is also 
+                renovated, as there is only one at the top, which is also dynamically resizeable. Try it yourself by squeezing the window, and using the 
+                scroll functionality to view all the options.
+              </p>
+              <p> All this buildup must be making you curious as to how the new and redesigned website looks! Well, <a href="https://chubbypenguin000.github.io/ddi-redesign/">here</a> you go!
+              Feel free to hover over the (non-clickable*) nav-bar menus as well as the testimonials :) </p>
+              <p style="font-size: 10px;">* they are non-clickable, but watch as the url changes when you click on a nav-bar option! </p>
+
+              <h3 style="display: flex; justify-content: center; align-items: center;"> <a href="https://chubbypenguin000.github.io/ddi-redesign/">click here!</a> </h3>
+        </div>
+
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
